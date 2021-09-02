@@ -38,7 +38,7 @@ const dataLoader = data =>{
             // show result quantity
     const result = document.getElementById('result-found');
     result.innerHTML =`
-    <small>Total result found: ${data.numFound}</small>`;
+    <small>Total result found: ${data.docs.length}</small>`;
     }
     // slicing array
     const array = data.docs.slice(0,20);
