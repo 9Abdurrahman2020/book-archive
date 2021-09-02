@@ -10,6 +10,7 @@ document.getElementById('result-found').innerHTML = '';
 //function to make link dynamic based on what user search  and simple error handle
 const textToDynamicLink = searchText =>{
     if(searchText.length === 0){
+        document.getElementById('spinner').classList.add('d-none');
         document.getElementById('error').innerText = `Please write a book name.`;
     }else{
         // start spinner 
