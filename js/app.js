@@ -15,7 +15,7 @@ const textToDynamicLink = searchText =>{
         document.getElementById('error').innerText = '';
         document.getElementById('book-container').innerHTML = '';
         document.getElementById('result-found').innerHTML = '';
-        const url = `http://openlibrary.org/search.json?q=${searchText}`;
+        const url = `https://openlibrary.org/search.json?q=${searchText}`;
         fetchData(url);
     }
 }
